@@ -62,14 +62,14 @@ if(localData == "light"){
     document.body.classList.remove("dark-mode");
 }
 else if(localData == "dark"){
-    darkModeBtn.src = "assets/sun.png";
+    darkModeBtn.src = "sun.png";
     document.body.classList.add("dark-mode");
 }
 
 darkModeBtn.onclick = function (){
     document.body.classList.toggle('dark-mode');
     if(document.body.classList.contains('dark-mode')){
-        darkModeBtn.src = "assets/sun.png"
+        darkModeBtn.src = "sun.png"
         localStorage.setItem("theme", "dark");
     }
     else{
